@@ -1,0 +1,19 @@
+name: test
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: prerequisites
+      run: sudo apt-get install libcurl4-openssl-dev gettext
+    - name: make
+      run: make
+    - name: test
+      run: cd t/ && prove -j$(nproc) --shuffle t[0-9]*.sh
