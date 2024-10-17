@@ -20,4 +20,4 @@ jobs:
     - name: smatch get
       run: git clone git://repo.or.cz/smatch.git && cd smatch && make
     - name: smatch run
-      run: make CHECK="./smatch/smatch -p=kernel" C=1 bzImage modules
+      run: make CHECK="./smatch/smatch --full-path" CC=./smatch/cgcc
