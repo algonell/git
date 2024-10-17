@@ -17,3 +17,7 @@ jobs:
       run: make
     - name: test
       run: cd t/ && prove -j$(nproc) --shuffle t[0-9]*.sh
+    - name: smatch get
+      run: git clone git://repo.or.cz/smatch.git && cd smatch && make
+    - name: smatch run
+      run: make CHECK="./smatch/smatch -p=kernel" C=1 bzImage modules
