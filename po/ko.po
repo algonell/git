@@ -2062,7 +2062,7 @@ msgid "Low-level Commands / Interrogators"
 msgstr "보조 명령 / 정보 획득 기능"
 
 #: help.c:37
-msgid "Low-level Commands / Synching Repositories"
+msgid "Low-level Commands / Syncing Repositories"
 msgstr "보조 명령 / 저장소 동기화 기능"
 
 #: help.c:38

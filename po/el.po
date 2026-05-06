@@ -2748,7 +2748,7 @@ msgid "Low-level Commands / Interrogators"
 msgstr "Εντολές Χαμηλού Επιπέδου / Ερωτημάτων"
 
 #: help.c:37
-msgid "Low-level Commands / Synching Repositories"
+msgid "Low-level Commands / Syncing Repositories"
 msgstr "Εντολές Χαμηλού Επιπέδου / Συγχρονισμού Αποθετηρίων"
 
 #: help.c:38
